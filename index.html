@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from presentation.creative-tim.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Jan 2017 22:21:37 GMT -->
+<head>
+        <meta charset="utf-8">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+
+         <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+
+        <title>Creative Tim | Tools to build better websites</title>
+
+        <!-- Canonical SEO -->
+        <link rel="canonical" href="http://www.creative-tim.com/"/>
+
+        <meta content="The most beautiful freebies, kits and website templates built for the bootstrap framework. A place for designers and developers." name="description" />
+        <meta content="creativetim, creative tim, bootstrap, theme, freebies, bootstrap kit, bootstrap template, free items, beautiful ui, awesome freebies,  css cards,  bootstrap wizard,  bootstrap plugin" name="keywords" />
+        <meta content="Creative Tim - Tools to build better websites" property="og:title" />
+        <meta content="http://www.creative-tim.com/" property="og:url" />
+        <meta content="https://s3.amazonaws.com/creativetim_bucket/mailchimp_tim_white_bg.jpg" property="og:image" />
+        <meta content="The most beautiful  freebies, kits and website templates built for the bootstrap framework. A place for designers and developers." property="og:description" />
+        <meta content="summary" property="twitter:card" />
+        <meta content="http://www.creative-tim.com/" property="twitter:url" />
+        <meta content="Creative Tim - Tools to build better websites" property="twitter:title" />
+        <meta content="The most beautiful  freebies, kits and website templates built for the bootstrap framework. A place for designers and developers." property="twitter:description" />
+        <meta content="https://s3.amazonaws.com/creativetim_bucket/mailchimp_tim_white_bg.jpg" property="twitter:image" />
+        <meta content="/" property="twitter:domain" />
+        <meta content="@CreativeTim" property="twitter:site" />
+        <meta content="@CreativeTim" property="twitter:creator" />
+
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/rubick_pres.css" rel="stylesheet"/>
+        <!--     Fonts and icons     -->
+        <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+        <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+        <link href="assets/css/fonts/Rubik-Fonts.css" rel="stylesheet" />
+
+        <style>
+            .section-header .separator {
+                margin: 0em auto 2em;
+            }
+            .space-50{
+                height: 50px;
+                width: 100%;
+                display: block;
+                content: "";
+            }
+            .section .parallax > img{
+                width: 100%;
+                min-width: 0;
+                min-height: 0;
+            }
+            .pattern-image:after{
+                opacity: .2;
+/*                 background: #111; */
+            }
+            .section-header h1{
+                text-shadow: -2px 2px 30px rgba(0, 0, 0, 0.25), -2px 4px 14px rgba(0, 0, 0, 0.1);
+            }
+            .section-header h5{
+                  text-shadow: 0px 0px 11px rgba(0, 0, 0, 0.3);
+            }
+            .section-header .content{
+                top: 42%;
+            }
+            .section-we-are-1 .title{
+                max-width: 960px;
+            }
+            .card .icon ~ h3{
+                margin-bottom: 10px;
+            }
+            .section-with-hover .project .content{
+                text-align: center;
+            }
+            .section-with-hover .project .over-area{
+                background: rgba(0, 0, 0, .83);
+            }
+            .section-clients-2{
+                padding: 6em 0 1em;
+            }
+            .section-clients-2 .nav-text li {
+                margin: 0 15px 10px 15px;
+            }
+            .section-contact-3 .contact-container .address-container{
+                width: 28%;
+                background-color: #FFFFFF;
+                height: 470px;
+                top: 50px;
+                padding: 20px;
+            }
+            .section-contact-3 .address{
+                margin-top: 40px;
+            }
+            .section-we-made-3 .content{
+                padding: 0 15px;
+                text-align: center;
+            }
+            .section-we-made-3 .over-area .content h3{
+                margin: 5px 0 20px;
+            }
+            .section-we-made-3 .over-area .content p{
+                font-size: .9em;
+                color: #898989;
+            }
+            .section-we-made-3 .over-area .content h5{
+                margin-bottom: 0px;
+                margin-top: 20px;
+            }
+
+            .btn-black{
+                letter-spacing: 1px;
+                margin-top: 20px;
+            }
+
+            .copyright a{
+                color: #FFFFFF;
+            }
+
+            .section-team-2 .team .member p {
+              font-size: .9em;
+              padding: 0 10px;
+            }
+
+            .card{
+                margin-bottom: 30px;
+            }
+            .section-with-hover .project .over-area.over-area-sm .content p {
+              font-size: .85em;
+            }
+            .section-with-hover .project .over-area.over-area-sm .content h4 {
+              font-size: 1.6em;
+            }
+            .logo{
+                display: block;
+                margin: 0 auto 10px;
+                width: 61px;
+                height: 61px;
+                border-radius: 50%;
+                border: 1px solid #333333;
+                overflow: hidden;
+            }
+            .logo img{
+                width: 100%;
+                height: 100%;
+            }
+            .loading .loading-container p {
+                font-size: 30px;
+                width: 220px;
+                margin: 0 auto;
+                margin-bottom: 30px;
+                height: 35px;
+            }
+            .loading .logo{
+                opacity: 0;
+                transition: all 0.9s;
+                -webkit-transition: all 0.9s;
+                -moz-transition: all 0.9s;
+            }
+            .loading .logo.visible{
+                opacity: 1;
+            }
+            .sharrre.btn{
+                color: #444444;
+                border-color: #444444;
+                font-weight: 400;
+            }
+            .address .col-md-6{
+                padding-right: 7px;
+                padding-left: 7px;
+            }
+            a.img-class{
+                opacity: 1;
+            }
+            a.img-class:hover{
+                opacity: .9;
+            }
+
+            .btn-lg{
+                padding: 14px 10px;
+            }
+
+            @media (max-width: 1200px){
+                .section-contact-3 .contact-container .address-container{
+                    height: 520px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" role="navigation">
+            <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+            <div class="container">
+                <div class="navbar-header">
+                    <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                    </button>
+                    <a target="_blank" href="http://www.creative-tim.com/?ref=presentation-page" class="navbar-brand">
+                    Adricolors
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" >
+                    <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                        <li class="social-links">
+                            <a href="https://www.facebook.com/CreativeTim">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <a href="https://twitter.com/CreativeTim">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://plus.google.com/+CreativetimPage">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <a href="https://dribbble.com/creativetim">
+                                <i class="fa fa-dribbble"></i>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="true" data-id="#whoWeAre">
+                            Nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="true" data-id="#workflow">
+                            Servicios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="true" data-id="#projects">
+                            Productos - Tinta
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="true" data-id="#uitools">
+                            Producto - Suministro
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="true" data-id="#clients">
+                            Testimonios
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-scroll="true" data-id="#contact">
+                            Contactos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="section section-header">
+                <div class="parallax pattern-image">
+                    <img src="assets/img/impresora.jpg "/>
+<!--                     <img src="/assets/img/header6.jpg"/> -->
+                    <div class="container">
+                        <div class="content">
+                            <h1>Adricolors</h1>
+                            <div class="separator-container">
+                                <div class="separator line-separator">∎</div>
+                            </div>
+                            <h5>Empresa que provee tintap para impresoras y implementos para computadoras</h5>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" data-scroll="true" data-id="#whoWeAre" class="scroll-arrow hidden-xs hidden-sm">
+                <i class="fa fa-angle-down"></i>
+                </a>
+            </div>
+            <div class="section section-we-are-1" id="whoWeAre">
+                <div class="text-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="title" id="animationTest">
+                                <h2>Sobre Nosotros</h2>
+                                <div class="separator-container">
+                                    <div class="separator line-separator">∎</div>
+                                </div>
+                                <p class="large">
+                                    Somos una  empresa peruana que se dirige al areá de venta de suministro de computadoras, tintas para impresoras, intalaciones de programas y intalaciones de los sitemas continuos a cualquier tipo impresoras.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card add-animation animation-2">
+                                        <img alt="..." src="assets/img/pic10.jpg" />
+                                    </div>
+                                    <div class="card add-animation animation-4">
+                                        <img alt="..." src="assets/img/pic6.jpg" />
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card add-animation animation-1">
+                                        <img alt="..." src="assets/img/pic11.jpg"/>
+                                    </div>
+                                    <div class="card add-animation animation-3">
+                                        <img alt="..." src="assets/img/pic1.jpg"/>
+                                    </div>
+                                    <div class="card add-animation animation-2">
+                                        <img alt="..." src="assets/img/pic9.jpg"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card add-animation animation-3">
+                                        <img alt="..." src="assets/img/pic2.jpg"/>
+                                    </div>
+                                     <div class="card add-animation animation-1">
+                                        <img alt="..." src="assets/img/pic4.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-we-do-2" id="workflow">
+                <div class="container">
+                    <div class="row">
+                        <div class="title add-animation">
+                            <h2>Servicios</h2>
+                            <div class="separator-container">
+                                <div class="separator line-separator">∎</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card add-animation animation-1">
+                                <div class="icon">
+                                    <i class="pe-7s-tools"></i>
+                                </div>
+                                <h3>Servicio Técnico</h3>
+                                <p>Arreglamos laptop y impresoras en Centro de Lima. Contamos con un servicio de calidad ya que el personal esta capacitado para cualquier tipo de dificultades</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card add-animation animation-2">
+                                <div class="icon">
+                                    <i class="pe-7s-gift"></i>
+                                </div>
+                                <h3>Venta de Toners</h3>
+                                <p>Contamos con Toners originales y realizamos recargas.Y contamos con los cuatro colores de toners</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card add-animation animation-3">
+                                <div class="icon">
+                                    <i class="pe-7s-rocket"></i>
+                                </div>
+                                <h3>Venta de Programas</h3>
+                                <p>Contamos con programas originales de todo tipo office, programas de diseño, juegos,etc. En ese mismo instante se lo instalamos </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section section-we-made-3" id="projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="title add-animation">
+                            <h2>Nuestros Productos </h2>
+                            <div class="separator-container">
+                                <div class="separator line-separator">∎</div>
+                            </div>
+                            <p>Echa un vistazo a los productos más populares de nuestra tienda. Nos encantaría escuchar sus comentarios.<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project add-animation animation-1">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/material-dashboard?ref=presentation-page">
+                                    <img src="assets/img/opt_md_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">Just Launched</h5>
+                                        <h3>Material Dashboard</h3>
+                                        <p>Material Dashboard is a free Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project add-animation animation-2">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/material-kit?ref=presentation-page">
+                                   <img src="assets/img/opt_mk_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">6.800+ Downloads</h5>
+                                        <h3>Material Kit</h3>
+                                        <p>Material Kit is a Free Bootstrap UI Kit with a fresh, new design inspired by Google's material design. You asked for it, so we built it. It's a great pleasure to introduce...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project add-animation animation-3">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/get-shit-done-kit?ref=presentation-page">
+                                    <img src="assets/img/opt_GSDK_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">19.200+ Downloads</h5>
+                                        <h3>Get Shit Done Kit</h3>
+                                        <p>Free Bootstrap 3 UI Kit, the best starting point for any online project you are building. It magically offers responsive design and easy to use elements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="space-50"></div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project add-animation animation-1">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/gaia-bootstrap-template?ref=presentation-page">
+                                    <img src="assets/img/opt_gbt_thumbnail.jpg">
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">3.100+ Downloads</h5>
+                                        <h3>Gaia Bootstrap Template</h3>
+                                        <p>Gaia Bootstrap Template is the Free Demo of Gaia Bootstrap Template PRO which is a multi-page Bootstrap template designed to be easy to use and stylish.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project add-animation animation-2">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/light-bootstrap-dashboard?ref=presentation-page">
+                                    <img src="assets/img/opt_lbd_thumbnail.jpg">
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">8.500+ Downloads</h5>
+                                        <h3>Light Bootstrap Dashboard</h3>
+                                        <p>Light Bootstrap Dashboard is an admin dashboard template designed to be beautiful and simple. It is built on top of Bootstrap 3 and it is fully responsive.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <div class="project add-animation animation-3">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/paper-kit?ref=presentation-page">
+                                    <img src="assets/img/opt_pk_thumbnail.jpg">
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">6.200+ Downloads</h5>
+                                        <h3>Paper Kit</h3>
+                                        <p>Paper Kit is a free Bootstrap UI kit that can get you going in a new creative direction! To say the least, it's different since it's not material, flat or iOS inspired.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section section-we-made-3" id="uitools">
+                <div class="container">
+                    <div class="row">
+                        <div class="title add-animation">
+                            <h2>Suministros de Computadoras</h2>
+                            <div class="separator-container">
+                                <div class="separator line-separator">∎</div>
+                            </div>
+                            <p>
+                                Echa un vistazo a los suministros de las computadoras y podrás darte cuenta que aca esta todo lo que necesitas!<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="project add-animation animation-1">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/material-kit-pro?ref=presentation-page">
+                                    <img src="assets/img/opt_mkp_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">UI Kit from $79</h5>
+                                        <h3>Material Kit PRO</h3>
+                                        <p>Start Your Development With A Badass Bootstrap UI Kit inspired by Material Design. If you like Google's Material Design, you will love this kit!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="project add-animation animation-2">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/gaia-bootstrap-template-pro?ref=presentation-page">
+                                    <img src="assets/img/opt_gbtp_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">Template from $29</h5>
+                                        <h3>Gaia Bootstrap Template PRO</h3>
+                                        <p>Gaia is a multi-page Bootstrap Template designed to be easy to use and stylish. If you are trying to create a new website, presentation page or blog, this is definitely a great fit for you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="project add-animation animation-3">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro/?ref=presentation-page">
+                                    <img src="assets/img/opt_lbd_pro_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">Dashboard from $39</h5>
+                                        <h3>Light Bootstrap Dashboard PRO</h3>
+                                        <p>Light Bootstrap Dashboard PRO is a Bootstrap Admin Theme designed to look simple and beautiful. It comes integrated with a large number of plugins redesigned to fit in with the rest of the elements. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="project add-animation animation-1">
+                                <a target="_blank" class="img-class" href="http://creative-tim.com/product/paper-kit-pro/?ref=presentation-page">
+                                    <img src="assets/img/opt_pk_pro_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">UI Kit from $49</h5>
+                                        <h3>Paper Kit PRO</h3>
+                                        <p>Paper Kit PRO is a set of coded web components built over Bootstrap, having a design that resembles paper. The kit comes with a huge number of customisable components.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="project animation-3">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/paper-dashboard-pro?ref=presentation-page">
+                                    <img src="assets/img/opt_pdp_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">Dashboard from $39</h5>
+                                        <h3>Paper Dashboard PRO</h3>
+                                        <p>Paper Dashboard PRO is a beautiful Bootstrap admin dashboard with a large number of components, designed to look neat and organised.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="project add-animation animation-2">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/get-shit-done-pro/?ref=presentation-page">
+                                    <img src="assets/img/opt_gsdk_new_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">UI Kit from $39</h5>
+                                        <h3>Get Shit Done PRO</h3>
+                                        <p>Get Shit Done Kit Pro comes with a huge number of customisable components. The components are not only designed to be pixel perfect and light but are also easy to use and match each other perfectly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+
+                            <div class="project add-animation animation-3">
+                                <a target="_blank" class="img-class" href="http://www.creative-tim.com/product/rubik-presentation-page?ref=presentation-page">
+                                    <img src="assets/img/opt_rubik_thumbnail.jpg"/>
+                                </a>
+                                <div class="over-area over-area-sm color-1">
+                                    <div class="content">
+                                        <h5 class="text-gray">Template from $19</h5>
+                                        <h3>Rubik Presentation Page</h3>
+                                        <p>Create your own page with many combinations! We created a builder that resembles a rubik cube. All the possible sections are simply awesome and will create an amazing looking presentation page.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="section section-clients-2" id="clients">
+                <div class="container">
+                    <div class="title add-animation">
+                        <h2>Te Ofrecemos...</h2>
+                        <div class="separator-container">
+                            <div class="separator line-separator">∎</div>
+                        </div>
+                    </div>
+                    <div class="tab-content quotes add-animation animation-2">
+                        <div class="tab-pane active" id="sony">
+                            <p class="large">
+                                Email: adricolors_sistems@hotmail.com <br>
+                                Tel:  994284248 - 981299541
+                            </p>
+                        </div>
+
+                        <div class="tab-pane" id="canon">
+                            <p class="large">
+                                Email: adricolors_sistems@hotmail.com <br>
+                                Tel:  994284248 - 981299541
+                            </p>
+                        </div>
+
+                        <div class="tab-pane" id="samsung">
+                            <p class="large">
+                                Email: adricolors_sistems@hotmail.com <br>
+                                Tel:  994284248 - 981299541
+                            </p>
+                        </div>
+
+                        <div class="tab-pane" id="intel">
+                            <p class="large">
+                                Email: adricolors_sistems@hotmail.com <br>
+                                Tel:  994284248 - 981299541
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="nav nav-text list-logos add-animation animation-2" role="tablist">
+                        <li class="active">
+                            <a href="index.html#sony" role="tab" data-toggle="tab">
+                                <h3 class="big-text">VENTA DE TONERS</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#canon" role="tab" data-toggle="tab">
+                                <h3 class="big-text">SISTEMA CONTINUO</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#samsung" role="tab" data-toggle="tab">
+                                <h3 class="big-text">RECARGAS CARTUCHOS</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#intel" role="tab" data-toggle="tab">
+                                <h3 class="big-text">TINTAS PARA IMPRESORA</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="section section-contact-3" id="contact">
+                <div class="contact-container">
+                    <div class="address-container add-animation animation-1">
+                        <div class="address">
+                            <h4>Dónde nos vemos ?</h4>
+                            <p class="text-gray">
+                                Galeria Garcilaso de la Vega 1261 <br>  stand 146 B - stand 232 gal. <br>Compuplaza 1251 stand 2251-258
+                            </p>
+                            <h4>Horario de apertura ?</h4>
+
+                            <p>Lunes - Sábado :<br> 10:00 AM - 9:00 PM <br><br>
+                               Domingo :<br> 12:00 PM - 4:00 PM</p>
+
+                            <div class="col-md-12">
+                                 <a href="https://www.facebook.com/adricolors/" target="_blank">
+                                     <button id="facebook2" class="btn btn-lg btn-contact btn-block">
+                                         <i class="fa fa-facebook-square"></i> Facebook
+                                    </button>
+                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="map">
+                        <div id="contactUsMap" class="big-map"></div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer footer-color-black">
+                <div class="container">
+                    <nav class="pull-left">
+                    </nav>
+                    <div class="social-area pull-right">
+                        <a class="btn btn-social btn-facebook btn-simple" href="https://www.facebook.com/CreativeTim">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                        <a class="btn btn-social btn-twitter btn-simple" href="https://twitter.com/CreativeTim">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-social btn-pinterest btn-simple" href="https://plus.google.com/+CreativetimPage">
+                            <i class="fa fa-google-plus-square"></i>
+                        </a>
+                        <a class="btn btn-social btn-pinterest btn-simple" href="https://dribbble.com/creativetim">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2017 <a target="_blank" href="http://www.softbutterfly.io"> Hecho por: </a>Sheyla Breña <a target="_blank" href="http://softbutterfly.io">Softbutterfly</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div> <!-- end wrapper -->
+    </body>
+    <!--   core js files    -->
+    <script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+    <!--   file for adding vertical points where we activate the elements animation   -->
+    <script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+    <!--  js library for devices recognition -->
+    <script type="text/javascript" src="assets/js/modernizr.js"></script>
+    <!--  script for google maps   -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <!--   file where we handle all the script from the Rubik page   -->
+    <script type="text/javascript" src="assets/js/rubick_pres.js"></script>
+
+    <script type="text/javascript" src="assets/js/presentation-page/jquery.sharrre.js"></script>
+
+    <script type="text/javascript">
+
+        $('#twitter').sharrre({
+          share: {
+            twitter: true
+          },
+          enableHover: false,
+          enableTracking: true,
+          enableCounter: false,
+          buttons: { twitter: {via: 'CreativeTim'}},
+          click: function(api, options){
+            api.simulateClick();
+            api.openPopup('twitter');
+          },
+          template: '<i class="fa fa-twitter"></i> Twitter &middot; 532',
+          url: 'http://presentation.creative-tim.com/'
+        });
+
+        $('#facebook').sharrre({
+          share: {
+            facebook: true
+          },
+          enableHover: false,
+          enableTracking: true,
+          enableCounter: false,
+          click: function(api, options){
+            api.simulateClick();
+            api.openPopup('facebook');
+          },
+          template: '<i class="fa fa-facebook-square"></i> Facebook &middot; 352',
+          url: 'http://presentation.creative-tim.com/'
+        });
+
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46172202-5', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</html>
